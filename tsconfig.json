@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2018",
+    "allowJs": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "outDir": "build",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@core/*": ["core/*"],
+      ".app/*": [".app/*"],
+      ".endpoint/*": [".endpoint/*"],
+      ".render/*": [".render/*"]
+    }
+  },
+
+  "include": [
+    ".app/**/*",
+    ".endpoint/**/*",
+    "core/**/*"
+  ]
+}
